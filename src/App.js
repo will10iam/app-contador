@@ -1,23 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import './index.css'
 
 function App() {
+  const [counter, setCounter] = useState(0)
+
+  function handleClick1() {
+    setCounter(counter + 1)
+  }
+
+  function handleClick2() {
+    setCounter(counter - 1)
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+
+      <div>
+        <h1>quantos pedaços você já comeu?</h1>
+      </div>
+
+      <div>
+        <h4>
+          não importa, o Lucas vai comer mais que você
+        </h4>
+
+        <h5>
+          o William também!
+        </h5>
+      </div>
+
+      <div>
+        {counter}
+      </div>
+
+
+      <h6>
+        #praticx10anos
+      </h6>
+
+      <div>
+        <button className='adicionar' onClick={handleClick1}>+</button>
+        <button className='remover' onClick={handleClick2}>-</button>
+      </div>
+
+
     </div>
   );
 }
