@@ -2,15 +2,19 @@ body {
   margin: 2;
   box-sizing: border-box;
   border: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Qatar2022', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./Assets/fundo-contador.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: "Qatar2022", sans-serif,
     monospace;
 }
 
@@ -22,21 +26,55 @@ code {
 }
 
 .adicionar {
-  font-size: 60%;
-  position: relative;
-  top: 20vh;
-  margin-right: 5px;
-  background-color: green;
-  border-radius: 8%;
-  color: white;
+  width: 120px;
+  margin-right: 25px;
 }
 
 .remover {
-  font-size: 60%;
-  position: relative;
-  top: 20vh;
-  margin-left: 5px;
-  background-color: red;
-  border-radius: 8%;
-  color: white;
+  width: 120px;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: -150px;
+}
+
+.buttons {
+  margin-top: 300px;
+}
+
+.hashtag h6 {
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: -15px;
+  opacity: 0.2;
+}
+
+.contador {
+  font-size: 150px;
+  margin-top: 55px;
+  margin-bottom: -300px;
+}
+
+.frase1 {
+  margin-top: 150px;
+  text-align: center;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 100;
+}
+
+.frase2 {
+  text-align: center;
+  margin-top: -25px;
+  margin-bottom: -30px;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 100;
+}
+
+.pergunta h1 {
+  font-size: 50px;
+  text-align: center;
+  width: 500px;
+  margin-top: 140px;
+  margin-bottom: -150px;
 }
