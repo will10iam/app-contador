@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './index.css'
 import Adicionar from './Assets/adicionar.svg'
 import Remover from './Assets/remover.png'
 import Logo from './Assets/logo.png'
 
 function App() {
-  const [counter, setCounter] = useState(0)
+  const [counter, setCounter] = useState(() => {
+    return JSON.parse(localStorage.getItem("contador"))
+  })
+
 
   function handleClick1() {
     setCounter(counter + 1)
@@ -14,6 +17,10 @@ function App() {
   function handleClick2() {
     setCounter(counter - 1)
   }
+
+  useEffect(() => {
+    window.localStorage.setItem("contador", JSON.stringify(counter))
+  })
 
 
   return (
